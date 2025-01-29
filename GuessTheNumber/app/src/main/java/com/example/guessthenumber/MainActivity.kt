@@ -12,7 +12,7 @@ import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
     var minValue = 0
-    var maxValue = 0
+    var maxValue = 100
     var num: Int = 0
     var won = false
 
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         guessed.setOnClickListener{
             if(!won){
                 guessings.setText("Adiviné, tu número es el "+num)
-                guessings.setText("Volver a jugar")
+                guessed.setText("Volver a jugar")
                 won = true
             }else{
                 generate.visibility = View.VISIBLE
